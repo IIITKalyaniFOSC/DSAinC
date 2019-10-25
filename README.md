@@ -1,3 +1,4 @@
 # Data Structures and Algorithms in C
-
-## Won't count towards prize
+1.Selection Sort 
+2.Bubble Sort 
+3.Quick Sort 
