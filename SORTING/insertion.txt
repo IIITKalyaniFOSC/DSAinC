@@ -1,0 +1,36 @@
+\\insertion sorting using 2 for loops
+
+#include<stdio.h>
+int main()
+{
+	int arr[100];
+	int i,j,a,n,temp;
+	printf("ENTER THE NUMBER OF ELEMENTS TO BE PRESENT IN ARRAY:\n");
+	scanf("%d",&n);
+	printf("ENTER THE ARRAY:\n");
+    for(a=0;a<n;a++)
+    {
+	scanf("%d",&arr[a]);
+    }
+    printf("YOUR ENTERED ARRAY IS:\n");
+    for(a=0;a<n;a++)
+    {
+     printf("%d";arr[a]);
+    }
+    for(i=1;i<n;i++)
+    {
+       temp=arr[i];
+       for(j=i-1;j>=0&&arr[j]>temp;j--)
+       {
+          arr[j+1]=arr[j];
+
+       }
+         arr[j+1]=temp;
+    }
+    printf("YOUR SORTED ARRAY IS:\n");
+    for(a=0;a<n;a++)
+    {
+       printf("%d",arr[a]);
+    }
+    return 0;
+}
